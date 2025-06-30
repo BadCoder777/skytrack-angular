@@ -1,0 +1,40 @@
+@if (flight) {
+<div
+  class="flex flex-col justify-between overflow-hidden p-6 bg-[#040415] text-white rounded-2xl w-112 h-56 transition-all border-2 border-[#040415] duration-600 hover:border-[#D77152]"
+>
+  <div class="flex justify-between items-center">
+    <div class="flex gap-3 items-center justify-center">
+      <div class="rounded-full bg-white overflow-hidden">
+        <img
+          [ngSrc]="flight.logo"
+          width="30"
+          height="30"
+          alt="Flight Logo"
+          class="h-8 w-8 object-contain"
+        />
+      </div>
+      <div>{{ flight.airline }}</div>
+    </div>
+    <div class="flex gap-2 justify-left text-sm">
+      <div class="bg-[#252525] rounded-full px-2 py-1">{{ flight.aircraftReg}}</div>
+      <div class="bg-[#252525] rounded-full px-2 py-1">
+        {{flight.airplane.name}}
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between items-center">
+    <div class="text-center">
+      <span>{{flight.from.city}}</span>
+      <h2 class="font-semibold text-5xl">{{flight.from.code}}</h2>
+    </div>
+    <div class="text-center">
+      <span>{{flight.to.city}}</span>
+      <h2 class="font-semibold text-5xl">{{flight.to.code}}</h2>
+    </div>
+  </div>
+</div>
+} @else {
+<div class="flex flex-col gap-8 p-6 bg-[#040415] text-white rounded-2xl">
+  <div class="text-gray-500">Flight information is not available.</div>
+</div>
+}

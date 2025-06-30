@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kaushan+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --font-kaushan: 'Kaushan Script', cursive;
+  --font-roboto: 'Roboto', sans-serif;
+
+  --color-primary-bg: #030311;
+  --color-primary-text: white;
+
+
+}
+
+@theme {
+  --font-jetbrains: var(--font-jetbrains);
+  --color-primary-bg: var(--color-primary-bg);
+  --color-primary-text: var(--color-primary-text);
+}

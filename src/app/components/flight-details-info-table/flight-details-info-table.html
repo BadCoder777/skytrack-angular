@@ -1,0 +1,21 @@
+<div class="grid grid-cols-2 grid-rows-[6fr_3fr_2fr] gap-2 rounded-lg overflow-hidden">
+		@if (flight != undefined) {
+			<div [ngClass]="[basicBlockStyles, 'flex justify-center items-center flex-col gap-2']">
+				<div class="text-4xl font-bold">{{ flight.from.countryCode }}</div>
+				<div class="text-sm font-semibold">{{ flight.from.city }}</div>
+				<div class="text-sm">{{flight.from.timezone}}</div>
+			</div>
+			<div [ngClass]="[basicBlockStyles, 'flex justify-center items-center flex-col gap-2']">
+				<div class="text-4xl font-bold">{{ flight.to.countryCode }}</div>
+				<div class="text-sm font-semibold">{{ flight.to.city }}</div>
+				<div class="text-sm">{{flight.to.timezone}}</div>
+			</div>
+			<div [ngClass]="[basicBlockStyles, 'col-span-2 flex justify-center items-center']">Status</div>
+			<div [ngClass]="basicBlockStyles">Scheduled: <span>8:15</span></div>
+			<div [ngClass]="basicBlockStyles">Actual: <span>15:30</span></div>
+			<div [ngClass]="basicBlockStyles">Scheduled: <span>9:14</span></div>
+			<div [ngClass]="basicBlockStyles">Estimated: <span>11:34</span></div>
+		} @else {
+			<div>Loading...</div>
+		}
+</div>
