@@ -1,5 +1,5 @@
 @if (flight) {
-<div
+<a [routerLink]="['/flight-info', flight.id]"
   class="flex flex-col justify-between overflow-hidden p-6 bg-[#040415] text-white rounded-2xl w-112 h-56 transition-all border-2 border-[#040415] duration-600 hover:border-[#D77152]"
 >
   <div class="flex justify-between items-center">
@@ -32,7 +32,7 @@
       <h2 class="font-semibold text-5xl">{{flight.to.code}}</h2>
     </div>
   </div>
-</div>
+</a>
 } @else {
 <div class="flex flex-col gap-8 p-6 bg-[#040415] text-white rounded-2xl">
   <div class="text-gray-500">Flight information is not available.</div>

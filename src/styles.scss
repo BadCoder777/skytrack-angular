@@ -9,6 +9,7 @@
 
   --color-primary-bg: #030311;
   --color-primary-text: white;
+  --color-bg-different: #282A36;
 
 
 }
@@ -16,5 +17,6 @@
 @theme {
   --font-jetbrains: var(--font-jetbrains);
   --color-primary-bg: var(--color-primary-bg);
+  --color-secondary-bg: var(--color-bg-different);
   --color-primary-text: var(--color-primary-text);
 }
