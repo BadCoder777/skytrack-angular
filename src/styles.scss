@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kaushan+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kaushan+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  background-image: url("/bg/background.jpg");
+  background-attachment: fixed;
+}
 
 :root {
-  --font-jetbrains: 'JetBrains Mono', monospace;
-  --font-kaushan: 'Kaushan Script', cursive;
-  --font-roboto: 'Roboto', sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+  --font-kaushan: "Kaushan Script", cursive;
+  --font-roboto: "Roboto", sans-serif;
 
   --color-primary-bg: #030311;
   --color-primary-text: white;
-  --color-bg-different: #282A36;
-
-
+  --color-bg-different: #282a36;
 }
 
 @theme {
